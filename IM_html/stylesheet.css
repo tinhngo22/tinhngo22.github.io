@@ -44,7 +44,7 @@ a{
 
 /* div 2 */
 .hero{
-    height:680px;
+    height:600px;
     background-color: lightgrey;
     display: flex;
     align-items: center;
