@@ -1,17 +1,39 @@
+/* upload github link to the github page and the link to website*/
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
     align-content: center;
 }
 
 a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
+a:hover{
+    background-color: #FFC24A;
+    color: #26395C;
+}
+
+video{
+    width: 50%;
+    justify-content: center;
+}
+
+img{
+    object-fit: contain;
+    width: 100%;
+}
+
+button:hover{
+    background-color:#FFC24A;
+}
+
+
+/* Homepage */
 /* div 1 */
-.header{
+.menu{
     display:flex;
     width:100%;
     justify-content: space-between;
@@ -20,11 +42,16 @@ a{
 
 .logo{
     display:flex;
-    background-color:white;
+    background-color: #26395C;
+    color:white;
     width: 50%;
     height: 40px;
     align-items: center;
     justify-content: center;
+}
+.logo:hover{
+    background-color: #26395C;
+    color:white;
 }
 
 .navbar{
@@ -37,7 +64,7 @@ a{
     display:flex;
     height:40px;
     width: 25%;
-    background-color: grey;
+    background-color: #26395C;
     justify-content:center;
     align-items: center;
 }
@@ -45,7 +72,7 @@ a{
 /* div 2 */
 .hero{
     height:600px;
-    background-color: lightgrey;
+    background-color: white;
     display: flex;
     align-items: center;
 }
@@ -73,22 +100,43 @@ a{
 .box{
     display: flex;
     justify-content: center;
+    padding: 24px 0;
 }
+
+.about{
+    background-image: url(img/darkbg2.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #26395C;
+    padding-bottom: 200px;
+}
+
 .holder{
+    border-radius: 25px;
+    border-color: #26395C;
+    border-width: 20px;
     display:flex;
-    margin: 50px;
-    justify-content: space-between;
-    align-items: flex-start;
+    margin: 100px;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
     width: 70%;
 }
 
-.video{
-    flex-wrap: nowrap;
-    width: 60%;
+.media{
+    width: 30%;
     height: auto;
+    border-radius: 1000px;
+    padding: 0 20px;
+}
+
+#special{
+    width: 60%;
 }
 .text{
-    width: 35%;
+    width: 30%;
+    margin: 0 0 0 40px;
+    color: #26395C;
 }
 
 .text h3{
@@ -96,21 +144,34 @@ a{
 }
 
 button{
+    border-radius: 7px;
     width: 90px;
     height: 30px;
-    background-color: black;
+    background-color: #26395C;
     color: white;
     border: none;
 }
 
 /* div 4 */
 
-.sponsor{
+
+/* div 5 */
+#vertical{
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    background-color: darkgray;
-    height: 70px;
+    align-items: center;
+}
+
+video{
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border-color: #26395C;
+    border-width: 2px;
+}
+
+#video_button{
+    margin: 0 10px;
 }
 
 /* footer */
@@ -118,21 +179,43 @@ button{
 footer{
     display:flex;
     justify-content: center;
-    background-color: gray;
+    flex-direction: column;
+    background-color: #26395C;
+    padding: 0 26px;
 }
 
 footer .box{
-    width: 50%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.column{
-    margin-bottom: 10px;
+footer .box.one{
+    width: 50%;
 }
 
-.column ul{
-    list-style: none;
-    padding: 0;
+footer a:hover{
+    background-color: #26395C;
+    color: white;
 }
+
+
+/* About page */
+
+.page_title{
+    background-color: gray;
+    height: 100px;
+    width: 100%;
+}
+
+.title_text{
+    background-color: lightgray;
+    padding: 10px;
+    height: 20px;
+    width: 100%;
+}
+
+#left{
+    margin: 0 40px 0 0px;
+}
+

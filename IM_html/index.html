@@ -5,33 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <div class="logo"><a href="index.html">logo</a></div>
+    <div class="menu">
+        <a href="index.html" class="logo">logo</a>
         <div class="navbar">
-            <div class="navpage" href="">Home</div>
-            <div class="navpage" href="">About</div>
-            <div class="navpage" href="">Contact</div>
-            <div class="navpage" href="">Credits</div>
+            <a href="index.html" class="navpage">Home</a>
+            <a href="About.html" class="navpage">About</a>
+            <a href="Contact.html" class="navpage">Contact</a>
+            <a href="Credits.html" class="navpage">Credits</a>
         </div>
     </div>
 
-    <div class="hero">
+    <div class="box hero">
         <h1><i>This is</i><br>THE TITLE</h1>
         <div class ="interaction"></div>
     </div>
 
     <main>
-        <div class="box">
+        <div class="box about">
             <div class="holder">
-                <div class="video">
-                    <video width="100%" controls>
-                        <source src="movie.mp4" type="video/mp4">
-                        <source src="movie.ogg" type="video/ogg">
-                      Your browser does not support the video tag.
-                      </video>
+                <div class="media" id="special">
+                    <a href="" alt="photo of the game"></a>
                 </div>
+
                 <div class="text">
                     <h3>This is title</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque quo recusandae omnis neque esse officiis, error commodi facilis repellat consequatur fugit voluptatum veniam ab id exercitationem, itaque, aut quidem eos!</p>
@@ -40,40 +40,49 @@
             </div>
         </div>
         
-        <div class="sponsor">
-            <p>Download and Find out more</p>
+        <div class="box">
+            <div class="media"><img src="img/happy.png"></div>
+            <div>
+                <div>Game Objectives</div>
+                <div>Wake the stickman up</div>
+                <div>Annoy him and earn points</div>
+            </div>
         </div>
+
+        <div class="box" id="vertical">
+            <video controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+            </video>
+
+            <div>
+                <button id="video_button"><a href="">Download</a></button>
+                <button id="video_button"><a href="About.html">Learn more</a></button>
+            </div>
+        </div>
+        
     </main>
     </body>
 
 <footer>
-    <div class="box">
-        <div class="column">
-            <h2>Sign up</h2>
-            <div></div>
-            <button>submit</button>
-        </div>
-        <div class="column">
-            <h2>Site map</h2>
-            <div>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                    <li>Credits</li>
-                </ul>
-            </div>
-        </div>
-        <div class="column">
-            <h2>Title</h2>
-            <div>
-                <image></image>
-                <p>Instagram</p>
-            </div>
-            <div>
-                <image>Facebook</image>
-            </div>
+    
+    <div class="box one">
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Contact.html">Contact</a>
+    <a href="Credits.html">Credits</a>
+    </div>
+    
+    <div class="box two">
+        <div>logo</div>
+        <div>copyright</div>
+        <div>
+            <a href="instagram.com"><img src="img/insta.png"></a>
+            <a href="x.com"><img src=""></a>
+            <a href="facebook.com"><img src=""></a>
         </div>
     </div>
+    
 </footer>
 </html>
