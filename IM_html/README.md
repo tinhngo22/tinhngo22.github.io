@@ -5,11 +5,19 @@ Welcome to the Readme file for the Game Homepage project! This imaginary game ho
 ## Introduction
 This project aims to create an engaging and visually appealing homepage for an imaginary video game. The homepage serves as a central hub for players to learn about the game's features, storyline, and get in contact with founder.
 
+## Concept and Theme
+The overall concept centers around a video game about a stickman who likes to sleep. The video hosted on the website is a trailer for this video game. Besides providing information for users on the video game, the website also aims to tell the context, or the storyline, of the game. As such, this website is inspired by the Super Mario video game homepage (https://mario.nintendo.com/).
+
 ## Features
 - Design with visually appealing graphics.
 - Clear navigation for easy exploration of game information.
 - Responsive layout using Flexbox for display on various devices.
 - Intuitive user interface.
+
+## Reflection
+Initially, I aim to create a website with smooth transition and clean layout. Flexbox helps achieve this aim and create a good foundation to build the website. However, I think more advanced CSS needs to be used to create smooth transition, such as slow appearing or fading effects. In the process of making this website, I also used free CSS and HTML elements found online (https://uiverse.io/). 
+
+All the graphic elements included in the website are orginal, except for logos from Instagram, Linkedin, Facebook and X. Since I designed all the graphic components, I also experimented with the size of the images and consider which dimensions work best for website, a problem that initially I did not consider.
 
 ## Technologies Used
 - HTML5
