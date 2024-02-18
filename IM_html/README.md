@@ -1,4 +1,4 @@
-# Game Homepage Readme
+# Good Morning - Video Game Homepage Project
 
 Welcome to the Readme file for the Game Homepage project! This imaginary game homepage is designed to showcase the game's features, storyline, and provide an engaging user experience. In this document, you will find information on the project structure, technologies used, and tips on maintaining and extending the codebase.
 
