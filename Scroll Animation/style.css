@@ -1,0 +1,154 @@
+html{
+	/* Set height of the html page to 100% of the browser height */
+	height: 100%;
+	/* Hide horizontal scroll */
+	overflow-x: hidden;
+	font-family: 'Helvetica', sans-serif;
+}
+
+body{
+	/* Set height of the body to 100% -- separated out of html to allow scrollTo animation */
+	height: 100%;
+	margin: 0px;
+}
+
+/* 
+Navigation Bar 
+*/
+#nav{
+	/* Fix navigation bar at the top middle of the web page */
+    position: fixed;
+    /* calc() CSS function calculates numbers of different units */
+    left: calc(50% - 50px);
+    top: 20px;
+    /* Display nav bar on top of everything else */
+    z-index: 1;
+}
+
+.nav-btn{
+	width: 20px;
+    height: 20px;
+    /* Make square div into a circle */
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid black;
+    display: inline-block;
+    cursor: pointer;
+    /* transition changes in background-color */
+    transition: background-color 0.5s;
+}
+
+/* When a nav-btn is hovered on, set background-color to black */
+.nav-btn:hover{
+	background-color: black;
+}
+
+/* 
+Cat Div
+*/
+#narration-div{
+	/* Fix cat div in the bottom left corner of the web page */
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 300px;
+	text-align: center;
+}
+
+
+#narration-text{
+	color: white;
+	background-color: black;
+	font-size: 32px;
+}
+
+/* 
+Parallax: Mountain and Ocean sections;
+*/
+#pedestrian, #butterfly, #cloud, #waterfall, #walking{
+	/* Set height of div to 100% */
+	height: 100%;
+	/* The bottom three background CSS settings create parallax effect */
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+#pedestrian{
+	/* Set background image of mountain section using url() function */
+	background-image: url('img/pedestrian.png');
+}
+
+#butterfly{
+	/* Set background image of ocean section using url() function */
+	background-image: url('img/butterfly.png');
+}
+
+#cloud{
+	/* Set background image of ocean section using url() function */
+	background-image: url('img/cloud.jpeg');
+}
+
+#waterfall{
+	/* Set background image of ocean section using url() function */
+	background-image: url('img/waterfall.jpg');
+}
+
+#walking{
+	/* Set background image of ocean section using url() function */
+	background-image: url('img/walking.jpg');
+}
+
+/* 
+Flower div inside Mountain section
+*/
+#title-div{
+    position: relative;
+    width: 200px;
+    text-align: center;
+    top: calc(100% - 300px);
+    left: calc(50% - 75px);
+}
+
+#title-text{
+	color: black;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 500;
+	font-size: 40px;
+	padding: 5px;
+	background-color: white;
+}
+
+/* 
+Text sections after Mountain and Ocean sections
+*/
+.text-section{
+	/* Center text in the middle of browser using flexbox */
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text{
+	width: 70%;
+	text-align: center;
+}
+
+/* back to top button */
+.top {
+	text-decoration: none;
+	padding: 10px;
+	font-family: sans-serif;
+	color: #fff;
+	background: #000;
+	border-radius: 10px;
+  }
+
+.text-special-section{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
