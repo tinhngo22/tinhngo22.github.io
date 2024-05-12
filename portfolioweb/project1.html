@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tinh's Porfolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project1.html" class="active">Comics</a></li>
+                <li><a href="project2.html">Sound</a></li>
+                <li><a href="project3.html">Video</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="/img/stars.png" id="stars">
+            <img src="/img/moon.png" id="moon">
+            <img id="mountains_behind">
+            <h2 id="text">Day in the Life of a Cat</h2>
+            <img id="mountains_front">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Comics: Day in the Life of a Cat</h2>
+            <p>Credits: Tinh Ngo, Jheel Thanki, Redha Al Hammad, Avinash Gyawaliali<br><br>
+                Step into the world of a campus cat as it navigates the streets in search of sustenance, offering a glimpse into the daily adventures of feline life. Through an interactive storytelling experience, users will embark on a journey from the cat's perspective, guided by immersive elements like sound and dynamic website scrolling. Join the cat on its quest for food, experiencing the thrill of the hunt and the satisfaction of a well-earned meal through the eyes of our furry protagonist.
+            </p>
+			
+			<div id="v_btn">
+				<a href="https://tauke190.github.io/interactivecomic/">Visit Project</a>
+			</div>
+			<img src="img/comics.png" class="description">
+        </div>
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll', function() {
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            })
+        </script>
+    </body>
+</html>

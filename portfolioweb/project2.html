@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tinh's Porfolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project1.html">Comics</a></li>
+                <li><a href="project2.html" class="active">Sound</a></li>
+                <li><a href="project3.html">Video</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="/img/stars.png" id="stars">
+            <img src="/img/moon.png" id="moon">
+            <img id="mountains_behind">
+            <h2 id="text">What's Happening at NYUAD</h2>
+            <img id="mountains_front">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Sounds: What's Happening at NYUAD</h2>
+            <p>Credits: Tinh Ngo, Jheel Thanki, Rashed Alshamsi, Rehnuma Taskin <br><br>
+                “Hey there”, “how's it going?" and "What's new?" - The common greetings that you will hear as you walk around NYUAD campus. But have you ever wondered, what is really going on at NYUAD? Join our hosts Rehnuma Taskin and Rashed Alshamsi on this podcast as they stroll through the NYUAD campus, discussing the latest events and updates. Be ready because you might be in for some unexpected news!
+            </p>
+			<div id="v_btn">
+				<a href="https://jheel2006.github.io/Sound_Project/ ">Visit Project</a>
+			</div>
+            <img src="img/sounds.png" class="description">
+        </div>
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll', function() {
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            })
+        </script>
+    </body>
+</html>
