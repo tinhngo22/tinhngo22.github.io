@@ -1,7 +1,7 @@
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight)
   
-  div0 = createDiv("<div class= 'intro'>Hello, Welcome to my website. This is the archive of projects that I have finished this semester.</div>")
+  div0 = createDiv("<div class= 'intro'>Hello, Welcome to my Creative Journey. Follow me on this journey to see what I have made!</div>")
   instruction = createDiv("<div class= 'instruction'><img src='/img/instruction.png' alt='Press Right arrow to move, Up arrow to see project'></div>")
   remind = createDiv("<div class = 'project'>Click to see project!</div>")
 
